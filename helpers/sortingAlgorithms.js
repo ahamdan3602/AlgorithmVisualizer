@@ -9,7 +9,6 @@ export class SortingAlgo {
         for (let i = 0; i < array.length; i++) {
           // Last i elements are already in place
           for (let j = 0; j < array.length - i - 1; j++) {
-
             // Checking if the item at present iteration is greather than the next iteration
             if (array[j] > array[j + 1]) {
               // If the condition is true, swap them
