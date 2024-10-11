@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class ="container">
+            <div class = "nav">
+                <h3>DSA Visuals</h3>
+                <ul>
+                    <li class = "li-item"><a>Home</a></li>
+                    <li class ="li-item"><a>Algorithms</a></li>
+                    <li class = "li-item"><a>Data Structures</a></li>
+                </ul>
+            </div>
+            <div class = "array-box">
+                <div class = "sidebar">
+                    <div class ="generate">
+                        <h3>Selection Sort</h3>
+                        <p>Generate Elements</p>
+                        <input type = "number" name  = "size-array" class = "num-bars" id ="number-bars" max = '20' min = '1' value = '10'> 
+                        <button class = "btn" id = "new-bars">New</button>
+                    </div>
+                    <div class ="solve">
+                        <button class ="btn" id = "solve-btn">Solve</button>
+                    </div>
+                </div>
+                <div class = "element-container" id = "stage">
+
+                </div>
+
+                </div>
+            </div>
+        </div>
+        
+        
+        <script type = "module" src="./selectionsort.js"></script>
+    </body>
+</html>
