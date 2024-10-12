@@ -14,7 +14,6 @@ export function bubbleSort(array) {
     return swaps;
 }
 
-
 export function selectionSort(array) {
     const swaps = [];
     for (let i = 0; i < array.length - 1; i++) {
@@ -31,6 +30,23 @@ export function selectionSort(array) {
     }
     return swaps; 
 }
+
+export function insertionSort(array) {
+    const swaps = [];
+    for (let i = 0; i < array.length;i++) {
+        let key = arr[i];
+        j = i - 1;
+        while (j>= 0 && arr[j] > key) {
+            swaps.push([i, j+1]);
+            arr[j+1] = arr[j];
+            j-= 1;
+        }
+        arr[j+1] = key;
+    }
+    return swaps;
+}
+
+
 
 
 function quickSort(array) {
