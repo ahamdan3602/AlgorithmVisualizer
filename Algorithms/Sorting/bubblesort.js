@@ -1,4 +1,4 @@
-import { selectionSort } from "./sorting.js";
+import { bubbleSort } from "./sorting.js";
 
 const stage = document.getElementById('stage');
 
@@ -82,7 +82,7 @@ function finish() {
 }
 function play() {
     const copy = [...bars];
-    const swaps = selectionSort(copy);
+    const swaps = bubbleSort(copy);
     animate(swaps);
 }
 
